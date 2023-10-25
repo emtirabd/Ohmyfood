@@ -1,0 +1,55 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+body header {
+  text-align: center;
+}
+body header .logo-container {
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: -1px -4px 10px;
+          box-shadow: -1px -4px 10px;
+}
+body header .logo-container img {
+  width: 150px;
+  padding: 15px 0;
+}
+body header form {
+  background-color: rgba(128, 128, 128, 0.1607843137);
+  color: #373535;
+}
+body header form i {
+  padding: 15px 10px;
+}
+body header form input {
+  color: #373535;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0);
+  border: none;
+  width: 32%;
+}
+body header .header-content {
+  background-color: rgba(203, 199, 199, 0.1607843137);
+}
+body header .header-content .header-text {
+  padding: 25px 0;
+}
+body header .header-content .header-text h1 {
+  margin: 0;
+  font-size: 21px;
+  padding-bottom: 14px;
+}
+body header .header-content .header-text p {
+  margin: 0;
+  font-size: 16px;
+}
+body header .header-content button {
+  margin-bottom: 45px;
+  padding: 15px;
+  border-radius: 20px;
+  border: transparent;
+  background-color: #9356DC;
+  color: white;
+  -webkit-box-shadow: 1px 2px 5px grey;
+          box-shadow: 1px 2px 5px grey;
+}/*# sourceMappingURL=accueil.css.map */

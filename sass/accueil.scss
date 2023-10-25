@@ -1,2 +1,59 @@
 @import 'global.scss';
 
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    header {
+        text-align: center;
+        .logo-container {
+            border-bottom: 1px solid transparent;
+            box-shadow: -1px -4px 10px;
+                img {
+                    width: 150px;
+                    padding: 15px 0;
+                }
+                        }
+        form {
+            background-color: #80808029;
+            color: #373535;
+                i {
+                    padding: 15px 10px;
+                }
+                    input{
+                        color: #373535 ;
+                        font-weight: bold;
+                        background-color: rgb(128 128 128 / 0%);
+                        border: none;
+                        width: 32%;
+                         }
+             }
+        .header-content {
+            background-color:#cbc7c729 ;
+            .header-text {
+                padding: 25px 0;
+                h1 {
+                    margin: 0;
+                    font-size: 21px;  
+                    padding-bottom: 14px;
+                }
+                p {
+                    margin: 0;
+                    font-size: 16px;
+                }
+            }
+                button {
+                margin-bottom: 45px;
+                padding: 15px;
+                border-radius: 20px;
+                border: transparent;
+                background-color: #9356DC ;
+                color: white;
+                box-shadow: 1px 2px 5px grey;
+                
+
+            }
+            
+
+                     }
+}
+}
