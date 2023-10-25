@@ -1,5 +1,23 @@
 @import 'global.scss';
 
+// variables
+
+$primary-color:#9356DC ;
+$secondary-color:#FF79DA ;
+$tertiary-color:#99E2D0;
+
+// mixins
+
+@mixin button {
+    padding: 15px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: $primary-color ;
+    color: white;
+    box-shadow: 1px 2px 5px grey;
+
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -40,20 +58,28 @@ body {
                     margin: 0;
                     font-size: 16px;
                 }
-            }
+                        }
                 button {
-                margin-bottom: 45px;
-                padding: 15px;
-                border-radius: 20px;
-                border: transparent;
-                background-color: #9356DC ;
-                color: white;
-                box-shadow: 1px 2px 5px grey;
-                
-
+                    margin-bottom: 45px;
+                    @include button;
+                        }
+                        }
             }
-            
 
-                     }
-}
+            .fonctionnement {
+                margin: 15px;
+                .fonctionnement-content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .fonctionnement-card{
+                        display: flex;
+                        align-items: center;
+                        background-color: #cbc7c729;
+                        box-shadow: 1px 3px 7px #80808045;
+                        border-radius: 20px;
+                        font-weight: 900;
+                    }
+                }
+                }
 }
