@@ -1,0 +1,72 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+body header {
+  text-align: center;
+}
+body header .logo-container {
+  border-bottom: 1px solid transparent;
+  box-shadow: -1px -4px 10px;
+}
+body header .logo-container img {
+  width: 150px;
+  padding: 15px 0;
+}
+
+body form {
+  background-color: #F6F6F6;
+  color: #353535;
+}
+body form i {
+  padding: 15px 10px;
+}
+body form input {
+  color: #353535;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  width: 32%;
+}
+body .header-content-content {
+  background-color: #F6F6F6;
+}
+body .header-content-content .header-text {
+  padding: 25px 0;
+}
+body .header-content-content .header-text h1 {
+  margin: 0;
+  font-size: 21px;
+  padding-bottom: 14px;
+}
+body .header-content-content .header-text p {
+  margin: 0;
+  font-size: 16px;
+}
+body .header-content-content button {
+  margin-bottom: 45px;
+  padding: 15px;
+  border-radius: 20px;
+  border: transparent;
+  background-color: #9356DC;
+  color: white;
+  box-shadow: 1px 2px 5px grey;
+}
+body .fonctionnement {
+  margin: 15px;
+}
+body .fonctionnement-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .fonctionnement-card {
+  display: flex;
+  align-items: center;
+  background-color: #F6F6F6;
+  box-shadow: 1px 3px 7px rgba(128, 128, 128, 0.2705882353);
+  border-radius: 20px;
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=accueil.css.map */
