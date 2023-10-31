@@ -98,7 +98,6 @@ body {
     padding: 20px;
     background-color: $grey-lighten;
 
-
     a {
       background-color: white;
       border-radius: 15px;
@@ -119,23 +118,43 @@ body {
 
       .card {
         width: 100%;
-      }
+        position: relative;
 
-      .card-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+          .new{
+            text-decoration: none;
+            color: $green-text;
+            font-weight: 500;
+            border-radius: 2px;
+            font-size: 13px;
+            padding: 5px 10px;
+            background-color: $green;
+            position: absolute;
+            top: 10px ; right: 10px;
+          }
+        
 
-        .card-txt {
-          color: black;
-          padding: 15px;
-
-          h3, p {
-            margin: 0;
+        .card-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+          .card-txt {
+            color: black;
+            padding: 15px;
+            
+            h3, p {
+              margin: 0;
             font-size: 16px;
           }
         }
+        
+        i {
+          color: black;
+          font-size: 25px;
+          padding: 0 15px;
+        }
       }
+    }
     }
   }
 }
