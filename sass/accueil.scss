@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 @import "global.scss";
 @import "mixin.scss";
 @import "variables.scss";
+=======
+@import 'global.scss';
+>>>>>>> f0a0f1ba87046dbcf6c6aad0d35683496113695c
 
 body {
   form {
     background-color: $grey-lighten;
     color: $text-color;
+<<<<<<< HEAD
     i {
       padding: 15px 10px;
     }
@@ -36,11 +41,50 @@ body {
       button {
         @include button;
         margin-bottom: 45px;
+=======
+
+    i {
+      padding: 15px 10px;
+    }
+
+    input {
+      color: $text-color;
+      font-weight: bold;
+      background-color: transparent;
+      border: none;
+      width: 32%;
+    }
+  }
+
+  .header {
+    &-content {
+      background-color: $grey-lighten;
+
+      button {
+        margin-bottom: 45px;
+        @include button;
+      }
+    }
+
+    &-text {
+      padding: 25px 0;
+
+      h1 {
+        margin: 0;
+        font-size: 21px;
+        padding-bottom: 14px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 16px;
+>>>>>>> f0a0f1ba87046dbcf6c6aad0d35683496113695c
       }
     }
   }
 
   .fonctionnement {
+<<<<<<< HEAD
     margin: 20px;
 
     .fonctionnement-content {
@@ -109,3 +153,23 @@ body {
     }
   }
 }
+=======
+    margin: 15px;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-card {
+      display: flex;
+      align-items: center;
+      background-color: $grey_lighten;
+      box-shadow: 1px 3px 7px #80808045;
+      border-radius: 20px;
+      font-weight: 900;
+    }
+  }
+}
+>>>>>>> f0a0f1ba87046dbcf6c6aad0d35683496113695c
