@@ -1,47 +1,9 @@
-<<<<<<< HEAD
 @import "global.scss";
-@import "mixin.scss";
-@import "variables.scss";
-=======
-@import 'global.scss';
->>>>>>> f0a0f1ba87046dbcf6c6aad0d35683496113695c
 
 body {
   form {
-    background-color: $grey-lighten;
+    background-color: $grey-darken;
     color: $text-color;
-<<<<<<< HEAD
-    i {
-      padding: 15px 10px;
-    }
-    input {
-      color: $text-color;
-      font-weight: bold;
-      background-color: transparent;
-      border: none;
-      width: 32%;
-    }
-  }
-
-  .header {
-    .header-content {
-      background-color: $grey-lighten;
-      .header-text {
-        padding: 25px 0;
-        h1 {
-          margin: 0;
-          font-size: 21px;
-          padding-bottom: 14px;
-        }
-        p {
-          margin: 0;
-          font-size: 16px;
-        }
-      }
-      button {
-        @include button;
-        margin-bottom: 45px;
-=======
 
     i {
       padding: 15px 10px;
@@ -55,6 +17,7 @@ body {
       width: 32%;
     }
   }
+
 
   .header {
     &-content {
@@ -78,83 +41,25 @@ body {
       p {
         margin: 0;
         font-size: 16px;
->>>>>>> f0a0f1ba87046dbcf6c6aad0d35683496113695c
       }
+    }
+
+    i {
+      padding: 15px 10px;
+    }
+
+    input {
+      color: $text-color;
+      font-weight: bold;
+      background-color: transparent;
+      border: none;
+      width: 32%;
     }
   }
 
   .fonctionnement {
-<<<<<<< HEAD
-    margin: 20px;
-
-    .fonctionnement-content {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-
-      .fonctionnement-card {
-        position: relative;
-        display: flex;
-        align-items: center;
-        background-color: $grey-lighten;
-        box-shadow: 1px 3px 7px #80808045;
-        border-radius: 20px;
-        font-weight: 900;
-
-        i{
-          color: grey;
-          padding: 25px;
-        }
-      }
-      .number{
-        position: absolute;
-        top: 30px; left: -10px;
-        background-color: $primary-color;
-        color: white;
-        font-size: 10px;
-        padding: 5px 8px;
-        border-radius: 25px;
-      }
-    }
-  }
-
-  .restaurants {    
-    padding: 20px;
-    background-color: $grey-lighten;
-
-
-    a{
-      background-color: white;
-      border-radius: 15px;
-      display: flex;
-      text-decoration: none;
-      border: 1px solid transparent;
-      box-shadow: 1px 8px 13px #ede9e9;
-      img{
-        width: 100%;
-        height: 150px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-      }
-      .card-content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .card-txt{
-          color: black;
-          padding: 15px;
-          h3, p{
-            margin: 0;
-            font-size: 16px;
-          }
-        }
-      }
-    }
-  }
-}
-=======
     margin: 15px;
+
 
     &-content {
       display: flex;
@@ -169,7 +74,68 @@ body {
       box-shadow: 1px 3px 7px #80808045;
       border-radius: 20px;
       font-weight: 900;
+      position: relative;
+    }
+
+    i {
+      color: grey;
+      padding: 25px;
+    }
+
+    .number {
+      position: absolute;
+      top: 23px;
+      left: -10px;
+      background-color: $primary-color;
+      color: white;
+      font-size: 10px;
+      padding: 5px 8px;
+      border-radius: 25px;
+    }
+  }
+
+  .restaurants {
+    padding: 20px;
+    background-color: $grey-lighten;
+
+
+    a {
+      background-color: white;
+      border-radius: 15px;
+      display: flex;
+      text-decoration: none;
+      border: 1px solid transparent;
+      box-shadow: 1px 8px 13px #ede9e9;
+      margin-bottom: 30px;
+
+      img {
+        width: 100%;
+        height: 150px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+        object-position: 0 60%;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .card-txt {
+          color: black;
+          padding: 15px;
+
+          h3, p {
+            margin: 0;
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }
->>>>>>> f0a0f1ba87046dbcf6c6aad0d35683496113695c
