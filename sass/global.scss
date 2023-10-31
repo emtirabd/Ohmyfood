@@ -1,1 +1,21 @@
-@import 'variables.scss';
+@import "variables.scss";
+@import "mixin.scss";
+
+body {
+    font-family: $font-text;
+    margin: 0;
+
+    header {
+        text-align: center;
+
+        .logo-container {
+            border-bottom: 1px solid transparent;
+            box-shadow: -1px -4px 10px ;
+    
+                img {
+                    width: 150px;
+                    padding: 15px 0;
+                }
+            }
+        }
+}
