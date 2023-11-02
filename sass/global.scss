@@ -21,9 +21,34 @@ body {
     }
   }
 
-  footer {
-    img {
-      width: 100%;
+  .footer {
+    background-color: $text-color;
+    padding: 20px;
+    h3{
+      margin: 0;
+      padding-bottom: 15px;
+      color: white;
+      font-family: $font-title;
+      font-weight: lighter;
+      font-size: 18px;
     }
+
+    &-link{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 14px;
+      a{
+        text-decoration: none;
+        color: white;
+        i{
+          font-size: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    
+    
   }
 }

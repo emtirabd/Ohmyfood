@@ -16,8 +16,36 @@ body header .logo-container img {
   width: 150px;
   padding: 15px 0;
 }
-body footer img {
-  width: 100%;
+body .footer {
+  background-color: #353535;
+  padding: 20px;
+}
+body .footer h3 {
+  margin: 0;
+  padding-bottom: 15px;
+  color: white;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+body .footer-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+body .footer-link a {
+  text-decoration: none;
+  color: white;
+}
+body .footer-link a i {
+  font-size: 10px;
+  padding-right: 10px;
 }
 
 body form {
@@ -174,6 +202,7 @@ body .restaurants a .card .card-content .card-txt h3, body .restaurants a .card 
 }
 body .restaurants a .card .card-content i {
   color: black;
+  font-weight: lighter;
   font-size: 25px;
   padding: 0 15px;
 }/*# sourceMappingURL=accueil.css.map */
