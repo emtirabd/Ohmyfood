@@ -6,15 +6,22 @@ body header {
   text-align: center;
 }
 body header .logo-container {
-  border-bottom: 1px solid transparent;
+  height: 50px;
   -webkit-box-shadow: -1px -4px 10px;
           box-shadow: -1px -4px 10px;
-  z-index: 1000;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body header .logo-container img {
   width: 150px;
-  padding: 15px 0;
 }
 body .footer {
   background-color: #353535;
@@ -205,4 +212,91 @@ body .restaurants a .card .card-content i {
   font-weight: lighter;
   font-size: 25px;
   padding: 0 15px;
-}/*# sourceMappingURL=accueil.css.map */
+}
+
+@media screen and (min-width: 1024px) {
+  body .header .logo-container {
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body .header input {
+    width: 11%;
+  }
+  body .header h1 {
+    font-size: 36px;
+  }
+  body .header button {
+    margin-bottom: 25px;
+  }
+  body main .fonctionnement {
+    margin: 45px 0;
+  }
+  body main .fonctionnement h2 {
+    padding-left: 90px;
+  }
+  body main .fonctionnement-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  body main .fonctionnement-content p {
+    margin: 0;
+    padding-right: 45px;
+  }
+  body main .fonctionnement-card {
+    font-size: 14px;
+  }
+  body main .restaurants {
+    padding: 15px 90px;
+  }
+  body main .restaurants-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 80px;
+  }
+  body .footer {
+    padding: 50px 50px 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 70px;
+  }
+  body .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .footer h3 {
+    padding: 0;
+  }
+}

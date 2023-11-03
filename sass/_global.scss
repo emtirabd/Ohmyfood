@@ -9,14 +9,15 @@ body {
     text-align: center;
 
     .logo-container {
-      border-bottom: 1px solid transparent;
+      height: 50px;
       box-shadow: -1px -4px 10px;
-      z-index: 1000;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       img {
         width: 150px;
-        padding: 15px 0;
       }
     }
   }

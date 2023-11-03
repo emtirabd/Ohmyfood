@@ -1,4 +1,7 @@
+@import "variables.scss";
 @import "global.scss";
+@import "mixin.scss";
+
 
 body {
   form {
@@ -158,4 +161,78 @@ body {
     }
     }
   }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  body{
+    .header {
+      .logo-container{
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+      }
+      input {
+        width: 11%;
+      }
+      h1 {
+        font-size: 36px;
+      }
+      button {
+        margin-bottom: 25px;
+      }
+    }
+
+    main{
+      .fonctionnement{
+        margin: 45px 0;
+        h2{
+          padding-left: 90px;
+        }
+        &-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 30px;
+          p{
+            margin: 0;
+            padding-right: 45px;
+          }
+        }
+        &-card {
+          font-size: 14px;
+        }
+      }
+
+      .restaurants {
+        padding: 15px 90px;
+        &-card{
+          display: grid;
+          grid-template-columns: 1fr 1fr; 
+          grid-template-rows: 1fr 1fr;    
+          gap: 10px 80px;
+        }
+
+      }
+    }
+    .footer{
+      padding: 50px 50px 15px 0;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 70px;
+      &-link {
+        display: flex;
+        flex-direction: row;
+        align-items:center ;
+      }
+      h3 {
+        padding: 0;
+      }
+
+    }
+  }
+
 }
