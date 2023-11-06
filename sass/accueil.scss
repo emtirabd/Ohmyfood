@@ -4,25 +4,12 @@
 
 
 body {
-  form {
-    background-color: $grey-darken;
-    color: $text-color;
-
-    i {
-      padding: 15px 10px;
-    }
-
-    input {
-      color: $text-color;
-      font-weight: bold;
-      background-color: transparent;
-      border: none;
-      width: 32%;
-    }
-  }
-
-
   .header {
+    form {
+      background-color: $grey-darken;
+      color: $text-color;
+    }
+
     &-content {
       background-color: $grey-lighten;
 
@@ -33,17 +20,17 @@ body {
     }
 
     &-text {
-      padding: 25px 0;
+      padding: 28px ;
 
       h1 {
         margin: 0;
-        font-size: 21px;
+        font-size: 23px;
         padding-bottom: 14px;
       }
 
       p {
         margin: 0;
-        font-size: 16px;
+        font-size: 15px;
       }
     }
 
@@ -56,33 +43,44 @@ body {
       font-weight: bold;
       background-color: transparent;
       border: none;
-      width: 32%;
+      width: 110px;
     }
   }
 
   .fonctionnement {
-    margin: 15px;
-
-
+    margin: 50px 25px;
+    h2{
+      margin: 0;
+    }
     &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+      p{
+        margin: 0;
+      }
+    }
+    &-allcard{
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
 
-    &-card {
-      display: flex;
-      align-items: center;
-      background-color: $grey_lighten;
-      box-shadow: 1px 3px 7px #80808045;
-      border-radius: 20px;
-      font-weight: 900;
-      position: relative;
-    }
+      &-card {
+        display: flex;
+        align-items: center;
+        background-color: $grey_lighten;
+        box-shadow: 1px 3px 7px #80808045;
+        border-radius: 20px;
+        font-weight: 900;
+        position: relative;
+      }
 
     i {
       color: grey;
-      padding: 25px;
+      padding: 25px 35px;
+      font-size: 20px;
     }
 
     .number {
@@ -164,7 +162,7 @@ body {
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 767px)  {
   
   body{
     .header {
@@ -188,19 +186,22 @@ body {
 
     main{
       .fonctionnement{
-        margin: 45px 0;
+        margin: 45px 15%;
         h2{
-          padding-left: 90px;
+          margin: 0;
         }
         &-content {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          gap: 30px;
+          
           p{
             margin: 0;
             padding-right: 45px;
           }
+        }
+        &-allcard{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          gap: 35px;
         }
         &-card {
           font-size: 14px;
@@ -227,9 +228,16 @@ body {
         display: flex;
         flex-direction: row;
         align-items:center ;
+        gap: 15px;
       }
       h3 {
         padding: 0;
+      }
+      #mentions{
+        padding-left: 30px;
+      }
+      .link-weight {
+        font-weight: 300;
       }
 
     }
