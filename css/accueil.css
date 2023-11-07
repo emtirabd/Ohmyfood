@@ -72,6 +72,16 @@ body .header-content button {
   color: white;
   -webkit-box-shadow: 1px 2px 5px grey;
           box-shadow: 1px 2px 5px grey;
+  cursor: pointer;
+  -webkit-transition: opacity 400ms, -webkit-box-shadow 400ms;
+  transition: opacity 400ms, -webkit-box-shadow 400ms;
+  transition: opacity 400ms, box-shadow 400ms;
+  transition: opacity 400ms, box-shadow 400ms, -webkit-box-shadow 400ms;
+}
+body .header-content button:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 1px 2px 8px grey;
+          box-shadow: 1px 2px 8px grey;
 }
 body .header-text {
   padding: 28px;
