@@ -231,7 +231,54 @@ body .restaurants a .card .card-content i {
   padding: 0 15px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) { /*media queries tablette a confirmer si necessaire*/
+  body .fonctionnement {
+    margin: 50px 10%;
+  }
+  body .fonctionnement-allcard {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .restaurants {
+    padding: 20px 10%;
+  }
+  body .footer { /*footer identique au desktop*/
+    padding: 50px 50px 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 70px;
+  }
+  body .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
+  body .footer h3 {
+    padding: 0;
+  }
+  body .footer #mentions {
+    padding-left: 30px;
+  }
+  body .footer .link-weight {
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 1024px) {
   body .header .logo-container {
     height: 70px;
     display: -webkit-box;
@@ -273,16 +320,16 @@ body .restaurants a .card .card-content i {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 35px;
   }
   body main .fonctionnement-card {
     font-size: 14px;
   }
   body main .restaurants {
-    padding: 15px 90px;
+    padding: 15px 15%;
   }
   body main .restaurants-card {
     display: grid;
