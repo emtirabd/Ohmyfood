@@ -7,18 +7,11 @@ body header {
 }
 body header .logo-container {
   height: 50px;
-  -webkit-box-shadow: -1px -4px 10px;
-          box-shadow: -1px -4px 10px;
+  box-shadow: -1px -4px 10px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 body header .logo-container img {
   width: 150px;
@@ -36,13 +29,8 @@ body .footer h3 {
   font-size: 18px;
 }
 body .footer-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 8px;
   font-size: 14px;
 }
@@ -56,37 +44,25 @@ body .footer-link a i {
 }
 
 @media screen and (min-width: 1024px) {
-  .footer {
+  body .footer {
     padding: 50px 50px 15px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     gap: 70px;
   }
-  .footer-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  body .footer-link {
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
     gap: 15px;
   }
-  .footer h3 {
+  body .footer h3 {
     padding: 0;
   }
-  .footer #mentions {
+  body .footer #mentions {
     padding-left: 30px;
   }
-  .footer .link-weight {
+  body .footer .link-weight {
     font-weight: 300;
   }
 }
@@ -95,12 +71,8 @@ body header {
 }
 body header .logo-container-menu {
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 body header .logo-container-menu i {
   color: #353535;
@@ -117,6 +89,9 @@ body header .container-img {
 }
 body header .container-img .img-menu {
   width: 100%;
+  height: 275px;
+  object-fit: cover;
+  object-position: 0 60%;
 }
 body main {
   background-color: #F6F6F6;
@@ -128,25 +103,14 @@ body main {
   margin-top: -45px;
 }
 body main .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
 }
 body main .menu-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 body main .menu h1 {
   margin: 10px 0;
@@ -170,18 +134,11 @@ body main .menu p {
 }
 body main .menu .dish-card {
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 13px;
-  -webkit-box-shadow: 0px 0px 20px #d7d7d7;
-          box-shadow: 0px 0px 20px #d7d7d7;
+  box-shadow: 0px 0px 20px #d7d7d7;
 }
 body main .menu .dish-card-text {
   padding: 15px;
@@ -201,21 +158,15 @@ body main button {
   padding: 15px;
   border-radius: 25px;
   border: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
-  -webkit-box-shadow: 1px 2px 5px grey;
-          box-shadow: 1px 2px 5px grey;
+  box-shadow: 1px 2px 5px grey;
   cursor: pointer;
-  -webkit-transition: opacity 400ms, -webkit-box-shadow 400ms;
-  transition: opacity 400ms, -webkit-box-shadow 400ms;
   transition: opacity 400ms, box-shadow 400ms;
-  transition: opacity 400ms, box-shadow 400ms, -webkit-box-shadow 400ms;
 }
 body main button:hover {
   opacity: 0.9;
-  -webkit-box-shadow: 1px 2px 8px grey;
-          box-shadow: 1px 2px 8px grey;
+  box-shadow: 1px 2px 8px grey;
 }
 
 @media screen and (min-width: 1024px) {
@@ -224,8 +175,8 @@ body main button:hover {
     margin: -40px 15% 0 15%;
   }
   body main .menu-title {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
+
+/*# sourceMappingURL=restaurants.css.map */

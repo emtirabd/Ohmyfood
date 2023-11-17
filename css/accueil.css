@@ -7,18 +7,11 @@ body header {
 }
 body header .logo-container {
   height: 50px;
-  -webkit-box-shadow: -1px -4px 10px;
-          box-shadow: -1px -4px 10px;
+  box-shadow: -1px -4px 10px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 body header .logo-container img {
   width: 150px;
@@ -36,13 +29,8 @@ body .footer h3 {
   font-size: 18px;
 }
 body .footer-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 8px;
   font-size: 14px;
 }
@@ -56,37 +44,25 @@ body .footer-link a i {
 }
 
 @media screen and (min-width: 1024px) {
-  .footer {
+  body .footer {
     padding: 50px 50px 15px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     gap: 70px;
   }
-  .footer-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  body .footer-link {
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
     gap: 15px;
   }
-  .footer h3 {
+  body .footer h3 {
     padding: 0;
   }
-  .footer #mentions {
+  body .footer #mentions {
     padding-left: 30px;
   }
-  .footer .link-weight {
+  body .footer .link-weight {
     font-weight: 300;
   }
 }
@@ -97,26 +73,22 @@ body .header form {
 body .header-content {
   background-color: #F6F6F6;
 }
-body .header-content button {
-  margin-bottom: 45px;
+body .header-content a {
   padding: 15px;
   border-radius: 25px;
   border: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
-  -webkit-box-shadow: 1px 2px 5px grey;
-          box-shadow: 1px 2px 5px grey;
+  box-shadow: 1px 2px 5px grey;
   cursor: pointer;
-  -webkit-transition: opacity 400ms, -webkit-box-shadow 400ms;
-  transition: opacity 400ms, -webkit-box-shadow 400ms;
   transition: opacity 400ms, box-shadow 400ms;
-  transition: opacity 400ms, box-shadow 400ms, -webkit-box-shadow 400ms;
+  margin-bottom: 45px;
+  text-decoration: none;
+  display: inline-block;
 }
-body .header-content button:hover {
+body .header-content a:hover {
   opacity: 0.9;
-  -webkit-box-shadow: 1px 2px 8px grey;
-          box-shadow: 1px 2px 8px grey;
+  box-shadow: 1px 2px 8px grey;
 }
 body .header-text {
   padding: 28px;
@@ -147,38 +119,23 @@ body .fonctionnement h2 {
   margin: 0;
 }
 body .fonctionnement-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
 }
 body .fonctionnement-content p {
   margin: 0;
 }
 body .fonctionnement-allcard {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
 }
 body .fonctionnement-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #F6F6F6;
-  -webkit-box-shadow: 1px 3px 7px rgba(128, 128, 128, 0.2705882353);
-          box-shadow: 1px 3px 7px rgba(128, 128, 128, 0.2705882353);
+  box-shadow: 1px 3px 7px rgba(128, 128, 128, 0.2705882353);
   border-radius: 20px;
   font-weight: 900;
   position: relative;
@@ -202,33 +159,28 @@ body .restaurants {
   padding: 20px;
   background-color: #F6F6F6;
 }
-body .restaurants a {
+body .restaurants .a-card {
   background-color: white;
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  text-decoration: none;
   border: 1px solid transparent;
-  -webkit-box-shadow: 1px 8px 13px #ede9e9;
-          box-shadow: 1px 8px 13px #ede9e9;
+  box-shadow: 1px 8px 13px #ede9e9;
   margin-bottom: 30px;
 }
-body .restaurants a img {
+body .restaurants .a-card img {
   width: 100%;
   height: 150px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 60%;
-     object-position: 0 60%;
+  object-fit: cover;
+  object-position: 0 60%;
 }
-body .restaurants a .card {
+body .restaurants .a-card .card {
   width: 100%;
   position: relative;
+  text-decoration: none;
 }
-body .restaurants a .card .new {
+body .restaurants .a-card .card .new {
   text-decoration: none;
   color: #008766;
   font-weight: 500;
@@ -240,93 +192,33 @@ body .restaurants a .card .new {
   top: 10px;
   right: 10px;
 }
-body .restaurants a .card .card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
+body .restaurants .a-card .card .card-content {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-body .restaurants a .card .card-content .card-txt {
+body .restaurants .a-card .card .card-content .card-txt {
   color: black;
   padding: 15px;
 }
-body .restaurants a .card .card-content .card-txt h3, body .restaurants a .card .card-content .card-txt p {
+body .restaurants .a-card .card .card-content .card-txt h3, body .restaurants .a-card .card .card-content .card-txt p {
   margin: 0;
   font-size: 16px;
 }
-body .restaurants a .card .card-content i {
+body .restaurants .a-card .card .card-content i {
   color: black;
   font-weight: lighter;
   font-size: 25px;
   padding: 0 15px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) { /*media queries tablette a confirmer si necessaire*/
-  body .fonctionnement {
-    margin: 50px 10%;
-  }
-  body .fonctionnement-allcard {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  body .restaurants {
-    padding: 20px 10%;
-  }
-  body .footer { /*footer identique au desktop*/
-    padding: 50px 50px 15px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    gap: 70px;
-  }
-  body .footer-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 15px;
-  }
-  body .footer h3 {
-    padding: 0;
-  }
-  body .footer #mentions {
-    padding-left: 30px;
-  }
-  body .footer .link-weight {
-    font-weight: 300;
-  }
-}
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   body .header .logo-container {
     height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
   }
   body .header input {
     width: 11%;
@@ -338,7 +230,7 @@ body .restaurants a .card .card-content i {
     margin-bottom: 25px;
   }
   body main .fonctionnement {
-    margin: 45px 15%;
+    margin: 45px 5%;
   }
   body main .fonctionnement h2 {
     margin: 0;
@@ -348,23 +240,16 @@ body .restaurants a .card .card-content i {
     padding-right: 45px;
   }
   body main .fonctionnement-allcard {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    justify-content: center;
     gap: 35px;
   }
   body main .fonctionnement-card {
     font-size: 14px;
   }
   body main .restaurants {
-    padding: 15px 15%;
+    padding: 15px 5%;
   }
   body main .restaurants-card {
     display: grid;
@@ -373,3 +258,13 @@ body .restaurants a .card .card-content i {
     gap: 10px 80px;
   }
 }
+@media screen and (min-width: 1024px) {
+  body main .fonctionnement {
+    margin: 45px 15%;
+  }
+  body main .restaurants {
+    padding: 15px 15%;
+  }
+}
+
+/*# sourceMappingURL=accueil.css.map */
