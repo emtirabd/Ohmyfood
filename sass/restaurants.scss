@@ -20,8 +20,12 @@ body {
                   margin: auto;
                 }
             }
-            .img-menu {
+            .container-img {
+              max-height: 350px;
+              overflow: hidden;
+              .img-menu {
                 width: 100%;
+              }
             }
           }
 
@@ -91,33 +95,20 @@ body {
                 @include button;
             }
           }
-
-          footer{
-                background-color: $text-color;
-                padding: 20px;
-                h3{
-                  margin: 0;
-                  padding-bottom: 15px;
-                  color: white;
-                  font-family: $font-title;
-                  font-weight: lighter;
-                  font-size: 18px;
-                }
-            
-                &-link{
-                  display: flex;
-                  flex-direction: column;
-                  gap: 8px;
-                  font-size: 14px;
-                  a{
-                    text-decoration: none;
-                    color: white;
-                    i{
-                      font-size: 10px;
-                      padding-right: 10px;
-                    }
-                  }
-                } 
-              }
           }
     
+          @media screen and (min-width: 1024px) {
+            body{
+              header{
+                
+              }
+              main{
+                padding: 40px 15%;
+                margin: -40px 15% 0 15%;
+                .menu-title{
+                  justify-content: center;
+                }
+              }
+            }
+
+          }

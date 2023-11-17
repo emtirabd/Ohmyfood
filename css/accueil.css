@@ -55,6 +55,41 @@ body .footer-link a i {
   padding-right: 10px;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 50px 50px 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 70px;
+  }
+  .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
+  .footer h3 {
+    padding: 0;
+  }
+  .footer #mentions {
+    padding-left: 30px;
+  }
+  .footer .link-weight {
+    font-weight: 300;
+  }
+}
 body .header form {
   background-color: #EAEAEA;
   color: #353535;
@@ -336,38 +371,5 @@ body .restaurants a .card .card-content i {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px 80px;
-  }
-  body .footer {
-    padding: 50px 50px 15px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    gap: 70px;
-  }
-  body .footer-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 15px;
-  }
-  body .footer h3 {
-    padding: 0;
-  }
-  body .footer #mentions {
-    padding-left: 30px;
-  }
-  body .footer .link-weight {
-    font-weight: 300;
   }
 }

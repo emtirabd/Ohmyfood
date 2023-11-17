@@ -55,6 +55,41 @@ body .footer-link a i {
   padding-right: 10px;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 50px 50px 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 70px;
+  }
+  .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+  }
+  .footer h3 {
+    padding: 0;
+  }
+  .footer #mentions {
+    padding-left: 30px;
+  }
+  .footer .link-weight {
+    font-weight: 300;
+  }
+}
 body header {
   text-align: center;
 }
@@ -76,7 +111,11 @@ body header .logo-container-menu img {
   width: 150px;
   margin: auto;
 }
-body header .img-menu {
+body header .container-img {
+  max-height: 350px;
+  overflow: hidden;
+}
+body header .container-img .img-menu {
   width: 100%;
 }
 body main {
@@ -178,34 +217,15 @@ body main button:hover {
   -webkit-box-shadow: 1px 2px 8px grey;
           box-shadow: 1px 2px 8px grey;
 }
-body footer {
-  background-color: #353535;
-  padding: 20px;
-}
-body footer h3 {
-  margin: 0;
-  padding-bottom: 15px;
-  color: white;
-  font-family: "Shrikhand", sans-serif;
-  font-weight: lighter;
-  font-size: 18px;
-}
-body footer-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 8px;
-  font-size: 14px;
-}
-body footer-link a {
-  text-decoration: none;
-  color: white;
-}
-body footer-link a i {
-  font-size: 10px;
-  padding-right: 10px;
+
+@media screen and (min-width: 1024px) {
+  body main {
+    padding: 40px 15%;
+    margin: -40px 15% 0 15%;
+  }
+  body main .menu-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
