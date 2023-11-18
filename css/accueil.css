@@ -7,11 +7,18 @@ body header {
 }
 body header .logo-container {
   height: 50px;
-  box-shadow: -1px -4px 10px;
+  -webkit-box-shadow: -1px -4px 10px;
+          box-shadow: -1px -4px 10px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body header .logo-container img {
   width: 150px;
@@ -29,8 +36,13 @@ body .footer h3 {
   font-size: 18px;
 }
 body .footer-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 8px;
   font-size: 14px;
 }
@@ -46,14 +58,26 @@ body .footer-link a i {
 @media screen and (min-width: 1024px) {
   body .footer {
     padding: 50px 50px 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     gap: 70px;
   }
   body .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 15px;
   }
   body .footer h3 {
@@ -77,18 +101,24 @@ body .header-content a {
   padding: 15px;
   border-radius: 25px;
   border: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
-  box-shadow: 1px 2px 5px grey;
+  -webkit-box-shadow: 1px 2px 5px grey;
+          box-shadow: 1px 2px 5px grey;
   cursor: pointer;
+  -webkit-transition: opacity 400ms, -webkit-box-shadow 400ms;
+  transition: opacity 400ms, -webkit-box-shadow 400ms;
   transition: opacity 400ms, box-shadow 400ms;
+  transition: opacity 400ms, box-shadow 400ms, -webkit-box-shadow 400ms;
   margin-bottom: 45px;
   text-decoration: none;
   display: inline-block;
 }
 body .header-content a:hover {
   opacity: 0.9;
-  box-shadow: 1px 2px 8px grey;
+  -webkit-box-shadow: 1px 2px 8px grey;
+          box-shadow: 1px 2px 8px grey;
 }
 body .header-text {
   padding: 28px;
@@ -119,23 +149,38 @@ body .fonctionnement h2 {
   margin: 0;
 }
 body .fonctionnement-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
 }
 body .fonctionnement-content p {
   margin: 0;
 }
 body .fonctionnement-allcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
 }
 body .fonctionnement-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #F6F6F6;
-  box-shadow: 1px 3px 7px rgba(128, 128, 128, 0.2705882353);
+  -webkit-box-shadow: 1px 3px 7px rgba(128, 128, 128, 0.2705882353);
+          box-shadow: 1px 3px 7px rgba(128, 128, 128, 0.2705882353);
   border-radius: 20px;
   font-weight: 900;
   position: relative;
@@ -162,9 +207,12 @@ body .restaurants {
 body .restaurants .a-card {
   background-color: white;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid transparent;
-  box-shadow: 1px 8px 13px #ede9e9;
+  -webkit-box-shadow: 1px 8px 13px #ede9e9;
+          box-shadow: 1px 8px 13px #ede9e9;
   margin-bottom: 30px;
 }
 body .restaurants .a-card img {
@@ -172,8 +220,10 @@ body .restaurants .a-card img {
   height: 150px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  object-fit: cover;
-  object-position: 0 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 60%;
+     object-position: 0 60%;
 }
 body .restaurants .a-card .card {
   width: 100%;
@@ -193,9 +243,15 @@ body .restaurants .a-card .card .new {
   right: 10px;
 }
 body .restaurants .a-card .card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body .restaurants .a-card .card .card-content .card-txt {
   color: black;
@@ -215,13 +271,17 @@ body .restaurants .a-card .card .card-content i {
 @media screen and (min-width: 768px) {
   body .header .logo-container {
     height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: none;
-  }
-  body .header input {
-    width: 11%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   body .header h1 {
     font-size: 36px;
@@ -240,9 +300,16 @@ body .restaurants .a-card .card .card-content i {
     padding-right: 45px;
   }
   body main .fonctionnement-allcard {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 35px;
   }
   body main .fonctionnement-card {
@@ -266,5 +333,3 @@ body .restaurants .a-card .card .card-content i {
     padding: 15px 15%;
   }
 }
-
-/*# sourceMappingURL=accueil.css.map */
