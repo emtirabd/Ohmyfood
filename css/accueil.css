@@ -55,7 +55,7 @@ body .footer-link a i {
   padding-right: 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   body .footer {
     padding: 50px 50px 15px 0;
     display: -webkit-box;
@@ -190,6 +190,9 @@ body .fonctionnement i {
   padding: 25px 35px;
   font-size: 20px;
 }
+body .fonctionnement .fa-store {
+  color: #9356DC;
+}
 body .fonctionnement .number {
   position: absolute;
   top: 23px;
@@ -297,7 +300,6 @@ body .restaurants .a-card .card .card-content i {
   }
   body main .fonctionnement-content p {
     margin: 0;
-    padding-right: 45px;
   }
   body main .fonctionnement-allcard {
     display: -webkit-box;
@@ -310,9 +312,10 @@ body .restaurants .a-card .card .card-content i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 35px;
+    gap: 5%;
   }
   body main .fonctionnement-card {
+    width: 280px;
     font-size: 14px;
   }
   body main .restaurants {
@@ -322,14 +325,14 @@ body .restaurants .a-card .card .card-content i {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px 80px;
+    gap: 10px 8%;
   }
 }
 @media screen and (min-width: 1024px) {
   body main .fonctionnement {
-    margin: 45px 15%;
+    margin: 45px 10%;
   }
   body main .restaurants {
-    padding: 15px 15%;
+    padding: 15px 10%;
   }
 }
