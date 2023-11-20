@@ -175,14 +175,15 @@ body main .menu-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20%;
 }
 body main .menu h1 {
   margin: 10px 0;
   font-family: "Shrikhand", sans-serif;
-  font-size: 25px;
+  font-size: 24px;
 }
 body main .menu i {
   font-size: 25px;
@@ -218,7 +219,7 @@ body main .menu .dish-card-text {
   padding: 15px;
 }
 body main .menu .dish-card-p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
 }
 body main .menu .dish-card-price {
@@ -249,10 +250,10 @@ body main button:hover {
           box-shadow: 1px 2px 8px grey;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   body main {
     padding: 40px 15%;
-    margin: -40px 15% 0 15%;
+    margin: -40px 12% 0 12%;
   }
   body main .menu-title {
     -webkit-box-pack: center;
