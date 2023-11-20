@@ -22,6 +22,39 @@ body {
     }
   }
 
+  .hidden-checkbox {
+    display: none;
+  }
+
+  .heart-label {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .emptyheart, .fullheart {
+    position: absolute;
+    top: -15px;
+    left: -60px;
+  }
+
+  .fullheart {
+    display: none; /* Cœur plein initialement caché */
+    color: $primary-color;
+  }
+
+  .emptyheart{
+    color: black; /*pour que les contours apparaissent en noir coeur vide*/
+  }
+
+  .heart-checkbox:checked + .heart-label .emptyheart {
+    display: none; /* Cache le cœur vide lorsque la case est cochée */
+  }
+
+  .heart-checkbox:checked + .heart-label .fullheart {
+    display: inline; /* Affiche le cœur plein lorsque la case est cochée */
+    
+  }
+
   .footer {
     background-color: $text-color;
     padding: 20px;

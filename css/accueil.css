@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -22,6 +23,31 @@ body header .logo-container {
 }
 body header .logo-container img {
   width: 150px;
+}
+body .hidden-checkbox {
+  display: none;
+}
+body .heart-label {
+  cursor: pointer;
+  position: relative;
+}
+body .emptyheart, body .fullheart {
+  position: absolute;
+  top: -15px;
+  left: -60px;
+}
+body .fullheart {
+  display: none; /* Cœur plein initialement caché */
+  color: #9356DC;
+}
+body .emptyheart {
+  color: black; /*pour que les contours apparaissent en noir coeur vide*/
+}
+body .heart-checkbox:checked + .heart-label .emptyheart {
+  display: none; /* Cache le cœur vide lorsque la case est cochée */
+}
+body .heart-checkbox:checked + .heart-label .fullheart {
+  display: inline; /* Affiche le cœur plein lorsque la case est cochée */
 }
 body .footer {
   background-color: #353535;
@@ -265,8 +291,6 @@ body .restaurants .a-card .card .card-content .card-txt h3, body .restaurants .a
   font-size: 16px;
 }
 body .restaurants .a-card .card .card-content i {
-  color: black;
-  font-weight: lighter;
   font-size: 25px;
   padding: 0 15px;
 }
