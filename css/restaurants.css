@@ -190,7 +190,7 @@ body main .menu i {
   padding: 0 15px;
 }
 body main .menu .highlight {
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   border-bottom: 3px solid #99E2D0;
 }
 body main .menu h4 {
@@ -202,6 +202,16 @@ body main .menu h4 {
 }
 body main .menu p {
   margin: 0;
+}
+body main .menu .starter, body main .menu .maincourse, body main .menu .dessert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
 }
 body main .menu .dish-card {
   background-color: white;
