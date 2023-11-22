@@ -234,6 +234,7 @@ body .restaurants {
   background-color: #F6F6F6;
 }
 body .restaurants .a-card {
+  position: relative;
   background-color: white;
   border-radius: 15px;
   display: -webkit-box;
@@ -286,13 +287,26 @@ body .restaurants .a-card .card .card-content .card-txt {
   color: black;
   padding: 15px;
 }
-body .restaurants .a-card .card .card-content .card-txt h3, body .restaurants .a-card .card .card-content .card-txt p {
+body .restaurants .a-card .card .card-content .card-txt h3,
+body .restaurants .a-card .card .card-content .card-txt p {
   margin: 0;
   font-size: 16px;
 }
 body .restaurants .a-card .card .card-content i {
   font-size: 25px;
   padding: 0 15px;
+}
+body .restaurants .card-rating {
+  position: absolute;
+  bottom: 23px;
+  right: 20px;
+}
+body .restaurants .card-rating .fullheart,
+body .restaurants .card-rating .emptyheart {
+  position: relative;
+  top: initial;
+  left: initial;
+  font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
