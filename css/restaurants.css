@@ -167,6 +167,7 @@ body main .menu {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  /* Animation d'apparition des groupes avec décalage */
 }
 body main .menu-title {
   display: -webkit-box;
@@ -203,6 +204,30 @@ body main .menu h4 {
 body main .menu p {
   margin: 0;
 }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); /* Décalage initial vers le bas */
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); /* Décalage initial vers le bas */
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 body main .menu .starter, body main .menu .maincourse, body main .menu .dessert {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +237,21 @@ body main .menu .starter, body main .menu .maincourse, body main .menu .dessert 
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
+  opacity: 0; /* Initialise l'opacité à 0 pour chaque groupe */
+  -webkit-animation: fadeIn 0.6s ease-in-out forwards;
+          animation: fadeIn 0.6s ease-in-out forwards;
+}
+body main .menu .starter {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; /* Décalage de 0.2s pour le groupe d'entrées */
+}
+body main .menu .maincourse {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+body main .menu .dessert {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 body main .menu .dish-card {
   background-color: white;
