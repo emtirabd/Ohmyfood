@@ -254,6 +254,10 @@ body main .menu .dessert {
           animation-delay: 0.6s;
 }
 body main .menu .dish-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 75px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,6 +271,12 @@ body main .menu .dish-card {
   border-radius: 13px;
   -webkit-box-shadow: 0px 0px 20px #d7d7d7;
           box-shadow: 0px 0px 20px #d7d7d7;
+}
+body main .menu .dish-card:hover .check-container {
+  right: 0;
+}
+body main .menu .dish-card:hover .dish-card-price {
+  margin-right: 50px;
 }
 body main .menu .dish-card-text {
   width: 75%;
@@ -283,6 +293,31 @@ body main .menu .dish-card-price {
   color: #353535;
   font-weight: 900;
   padding: 25px 15px 0 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+body main .menu .dish-card .check-container {
+  position: absolute;
+  height: 100%;
+  width: 45px;
+  right: -45px;
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+body main .menu .dish-card .check-container .fa-circle-check {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  padding: 0;
 }
 body main button {
   margin: 25px auto;

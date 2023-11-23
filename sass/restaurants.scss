@@ -121,12 +121,26 @@ body {
 
 
       .dish-card {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        height: 75px;
         background-color: white;
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-radius: 13px;
         box-shadow: 0px 0px 20px #d7d7d7;
+
+        &:hover{
+          .check-container {
+            right: 0;
+          }
+
+          .dish-card-price {
+            margin-right: 50px;
+          }
+        }
 
         &-text {
           width: 75%;
@@ -145,6 +159,24 @@ body {
           color: $text-color;
           font-weight: 900;
           padding: 25px 15px 0 0;
+          transition: .3s all;
+        }
+
+        .check-container {
+          position: absolute;
+          height: 100%;
+          width: 45px;
+          right: -45px;
+          background-color: $tertiary-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: .3s all;
+          .fa-circle-check {
+            color: $white;
+            font-size: 1.25rem;
+            padding: 0;
+          }
         }
       }
     }
