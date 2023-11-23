@@ -116,20 +116,20 @@ body .footer-link a i {
     font-weight: 300;
   }
 }
-body .loader-background {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  z-index: 998;
-  -webkit-animation: fadeOutBackground 2.5s linear forwards;
-          animation: fadeOutBackground 2.5s linear forwards;
-}
+body .loader-background,
 body .loader-container {
   position: fixed;
-  height: 100%;
   width: 100%;
+  height: 100%;
+}
+body .loader-background {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 998;
+  -webkit-animation: fadeOutBackground 1.5s linear forwards;
+          animation: fadeOutBackground 1.5s linear forwards;
+}
+body .loader-container {
   z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,20 +140,18 @@ body .loader-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
 }
 body .loader-container .loader {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   display: inline-block;
-  border-top: 4px solid #FFF;
+  border-top: 4px solid #FF79DA;
   border-right: 4px solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-animation: rotation 2.5s linear forwards;
-          animation: rotation 2.5s linear forwards;
+  -webkit-animation: rotation 1.5s linear forwards;
+          animation: rotation 1.5s linear forwards;
 }
 body .loader-container .loader::after {
   content: "";
@@ -191,11 +189,8 @@ body .loader-container .loader::after {
   }
 }
 @-webkit-keyframes fadeOutBackground {
-  0% {
+  0%, 90% {
     opacity: 1;
-  }
-  90% {
-    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -203,11 +198,8 @@ body .loader-container .loader::after {
   }
 }
 @keyframes fadeOutBackground {
-  0% {
+  0%, 90% {
     opacity: 1;
-  }
-  90% {
-    opacity: 0;
   }
   100% {
     opacity: 0;

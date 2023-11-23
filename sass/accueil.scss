@@ -3,34 +3,37 @@
 @import "mixin.scss";
 
 body {
-  .loader-background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(5px);
-    z-index: 998; 
-    animation: fadeOutBackground 2.5s linear forwards;
-  }
+  .loader-background,
   .loader-container {
     position: fixed;
-    height: 100%;
     width: 100%;
+    height: 100%;
+  }
+
+  .loader-background {
+    backdrop-filter: blur(10px);
+    z-index: 998;
+    animation: fadeOutBackground 1.5s linear forwards;
+  }
+
+  .loader-container {
     z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5px);
+
     .loader {
       width: 48px;
       height: 48px;
       border-radius: 50%;
       display: inline-block;
-      border-top: 4px solid #FFF;
+      border-top: 4px solid $secondary-color;
       border-right: 4px solid transparent;
       box-sizing: border-box;
-      animation: rotation 2.5s linear forwards;
+      animation: rotation 1.5s linear forwards;
+
       &::after {
-        content: '';  
+        content: '';
         box-sizing: border-box;
         position: absolute;
         left: 0;
@@ -49,17 +52,15 @@ body {
       }
       to {
         transform: rotate(360deg);
-        display: none;
-      } 
-    } 
+        display: none; // Suppression du display: none; de l'animation rotation
+      }
+    }
+
     @keyframes fadeOutBackground {
-      0% {
+      0%, 90% {
         opacity: 1;
       }
-      90% {
-        opacity: 0;
-      }
-      100%{
+      100% {
         opacity: 0;
         display: none;
       }
