@@ -139,12 +139,18 @@ body {
 
           .dish-card-price {
             margin-right: 50px;
+            margin-left: 10px;
+          }
+          .dish-card-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
           }
         }
 
         &-text {
           width: 75%;
-          padding: 15px;
+          padding-left: 15px;
         }
 
         &-p {
