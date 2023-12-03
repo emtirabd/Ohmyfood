@@ -38,7 +38,11 @@ body .emptyheart, body .fullheart {
 }
 body .fullheart {
   display: none; /* Cœur plein initialement caché */
-  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  color: transparent; /* Rend le texte réel transparent pour que le dégradé apparaisse à travers */
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 body .emptyheart {
   color: black; /*pour que les contours apparaissent en noir coeur vide*/

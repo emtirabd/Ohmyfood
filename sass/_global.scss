@@ -39,7 +39,9 @@ body {
 
   .fullheart {
     display: none; /* Cœur plein initialement caché */
-    color: $primary-color;
+    background: linear-gradient(to bottom, $primary-color, $secondary-color);
+    color: transparent; /* Rend le texte réel transparent pour que le dégradé apparaisse à travers */
+    background-clip: text;
   }
 
   .emptyheart{
