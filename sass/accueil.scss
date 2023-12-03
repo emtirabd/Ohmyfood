@@ -311,6 +311,11 @@ body {
     main {
       .fonctionnement {
         margin: 45px 10%;
+        &-card {
+          width: 30%;
+          gap: 7%;
+          font-size: 17px;
+        }
       }
 
       .restaurants {

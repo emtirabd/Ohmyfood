@@ -464,6 +464,11 @@ body .restaurants .card-rating .emptyheart {
   body main .fonctionnement {
     margin: 45px 10%;
   }
+  body main .fonctionnement-card {
+    width: 30%;
+    gap: 7%;
+    font-size: 17px;
+  }
   body main .restaurants {
     padding: 15px 10%;
   }
