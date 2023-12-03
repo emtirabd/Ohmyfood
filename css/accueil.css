@@ -37,21 +37,23 @@ body .emptyheart, body .fullheart {
   left: -60px;
 }
 body .fullheart {
-  display: none; /* Cœur plein initialement caché */
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   color: transparent; /* Rend le texte réel transparent pour que le dégradé apparaisse à travers */
   -webkit-background-clip: text;
           background-clip: text;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
 }
 body .emptyheart {
   color: black; /*pour que les contours apparaissent en noir coeur vide*/
 }
 body .heart-checkbox:checked + .heart-label .emptyheart {
-  display: none; /* Cache le cœur vide lorsque la case est cochée */
+  opacity: 0;
 }
 body .heart-checkbox:checked + .heart-label .fullheart {
-  display: inline; /* Affiche le cœur plein lorsque la case est cochée */
+  opacity: 1;
 }
 body .footer {
   background-color: #353535;
@@ -397,9 +399,9 @@ body .restaurants .card-rating {
 }
 body .restaurants .card-rating .fullheart,
 body .restaurants .card-rating .emptyheart {
-  position: relative;
-  top: initial;
-  left: initial;
+  position: absolute;
+  top: -25px;
+  left: -40px;
   font-size: 25px;
 }
 

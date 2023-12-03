@@ -236,9 +236,9 @@ body {
       
       .fullheart,
       .emptyheart {
-        position: relative;
-        top: initial;
-        left: initial;
+        position: absolute;
+        top: -25px;
+        left: -40px;
         font-size: 25px;
       }
     }
